@@ -1,0 +1,280 @@
+{
+  "run": {
+    "date": "2026-01-11T04:14:10.080156",
+    "threshold": 10.0,
+    "exome_size_mb": 30.0,
+    "passed": true
+  },
+  "targets": {
+    "sensitivity": 0.85,
+    "specificity": 0.8,
+    "auc": 0.85
+  },
+  "results": {
+    "overall_metrics": {
+      "n_patients": 1927,
+      "n_tmb_h_true": 653,
+      "n_tmb_h_predicted": 642,
+      "confusion_matrix": {
+        "tp": 642,
+        "tn": 1274,
+        "fp": 0,
+        "fn": 11
+      },
+      "accuracy": 0.9943,
+      "sensitivity": 0.9832,
+      "specificity": 1.0,
+      "precision": 1.0,
+      "f1_score": 0.9915,
+      "auc": 0.9987
+    },
+    "by_cancer_type": {
+      "endometrial": {
+        "n": 517,
+        "accuracy": 0.9981,
+        "sensitivity": 0.9946,
+        "specificity": 1.0
+      },
+      "colorectal": {
+        "n": 534,
+        "accuracy": 0.9963,
+        "sensitivity": 0.9759,
+        "specificity": 1.0
+      },
+      "stomach": {
+        "n": 436,
+        "accuracy": 0.9839,
+        "sensitivity": 0.9293,
+        "specificity": 1.0
+      },
+      "melanoma": {
+        "n": 440,
+        "accuracy": 0.9977,
+        "sensitivity": 0.9965,
+        "specificity": 1.0
+      }
+    },
+    "sample_results": [
+      {
+        "patient_id": "TCGA-2E-A9G8",
+        "sample_id": "TCGA-2E-A9G8-01",
+        "cancer_type": "endometrial",
+        "mutation_count": 65,
+        "ground_truth_tmb": 2.166666667,
+        "estimated_tmb": 2.17,
+        "ground_truth_tmb_h": false,
+        "estimated_tmb_h": false,
+        "correct": true
+      },
+      {
+        "patient_id": "TCGA-4E-A92E",
+        "sample_id": "TCGA-4E-A92E-01",
+        "cancer_type": "endometrial",
+        "mutation_count": 147,
+        "ground_truth_tmb": 4.9,
+        "estimated_tmb": 4.9,
+        "ground_truth_tmb_h": false,
+        "estimated_tmb_h": false,
+        "correct": true
+      },
+      {
+        "patient_id": "TCGA-5B-A90C",
+        "sample_id": "TCGA-5B-A90C-01",
+        "cancer_type": "endometrial",
+        "mutation_count": 45,
+        "ground_truth_tmb": 1.566666667,
+        "estimated_tmb": 1.5,
+        "ground_truth_tmb_h": false,
+        "estimated_tmb_h": false,
+        "correct": true
+      },
+      {
+        "patient_id": "TCGA-5S-A9Q8",
+        "sample_id": "TCGA-5S-A9Q8-01",
+        "cancer_type": "endometrial",
+        "mutation_count": 50,
+        "ground_truth_tmb": 1.7,
+        "estimated_tmb": 1.67,
+        "ground_truth_tmb_h": false,
+        "estimated_tmb_h": false,
+        "correct": true
+      },
+      {
+        "patient_id": "TCGA-A5-A0G1",
+        "sample_id": "TCGA-A5-A0G1-01",
+        "cancer_type": "endometrial",
+        "mutation_count": 10808,
+        "ground_truth_tmb": 363.5333333,
+        "estimated_tmb": 360.27,
+        "ground_truth_tmb_h": true,
+        "estimated_tmb_h": true,
+        "correct": true
+      },
+      {
+        "patient_id": "TCGA-A5-A0G2",
+        "sample_id": "TCGA-A5-A0G2-01",
+        "cancer_type": "endometrial",
+        "mutation_count": 25698,
+        "ground_truth_tmb": 861.8666667,
+        "estimated_tmb": 856.6,
+        "ground_truth_tmb_h": true,
+        "estimated_tmb_h": true,
+        "correct": true
+      },
+      {
+        "patient_id": "TCGA-A5-A0G3",
+        "sample_id": "TCGA-A5-A0G3-01",
+        "cancer_type": "endometrial",
+        "mutation_count": 38,
+        "ground_truth_tmb": 1.266666667,
+        "estimated_tmb": 1.27,
+        "ground_truth_tmb_h": false,
+        "estimated_tmb_h": false,
+        "correct": true
+      },
+      {
+        "patient_id": "TCGA-A5-A0G5",
+        "sample_id": "TCGA-A5-A0G5-01",
+        "cancer_type": "endometrial",
+        "mutation_count": 123,
+        "ground_truth_tmb": 4.133333333,
+        "estimated_tmb": 4.1,
+        "ground_truth_tmb_h": false,
+        "estimated_tmb_h": false,
+        "correct": true
+      },
+      {
+        "patient_id": "TCGA-A5-A0G9",
+        "sample_id": "TCGA-A5-A0G9-01",
+        "cancer_type": "endometrial",
+        "mutation_count": 439,
+        "ground_truth_tmb": 14.76666667,
+        "estimated_tmb": 14.63,
+        "ground_truth_tmb_h": true,
+        "estimated_tmb_h": true,
+        "correct": true
+      },
+      {
+        "patient_id": "TCGA-A5-A0GA",
+        "sample_id": "TCGA-A5-A0GA-01",
+        "cancer_type": "endometrial",
+        "mutation_count": 301,
+        "ground_truth_tmb": 10.06666667,
+        "estimated_tmb": 10.03,
+        "ground_truth_tmb_h": true,
+        "estimated_tmb_h": true,
+        "correct": true
+      },
+      {
+        "patient_id": "TCGA-A5-A0GB",
+        "sample_id": "TCGA-A5-A0GB-01",
+        "cancer_type": "endometrial",
+        "mutation_count": 670,
+        "ground_truth_tmb": 22.56666667,
+        "estimated_tmb": 22.33,
+        "ground_truth_tmb_h": true,
+        "estimated_tmb_h": true,
+        "correct": true
+      },
+      {
+        "patient_id": "TCGA-A5-A0GE",
+        "sample_id": "TCGA-A5-A0GE-01",
+        "cancer_type": "endometrial",
+        "mutation_count": 31,
+        "ground_truth_tmb": 1.1,
+        "estimated_tmb": 1.03,
+        "ground_truth_tmb_h": false,
+        "estimated_tmb_h": false,
+        "correct": true
+      },
+      {
+        "patient_id": "TCGA-A5-A0GH",
+        "sample_id": "TCGA-A5-A0GH-01",
+        "cancer_type": "endometrial",
+        "mutation_count": 431,
+        "ground_truth_tmb": 14.36666667,
+        "estimated_tmb": 14.37,
+        "ground_truth_tmb_h": true,
+        "estimated_tmb_h": true,
+        "correct": true
+      },
+      {
+        "patient_id": "TCGA-A5-A0GI",
+        "sample_id": "TCGA-A5-A0GI-01",
+        "cancer_type": "endometrial",
+        "mutation_count": 340,
+        "ground_truth_tmb": 11.36666667,
+        "estimated_tmb": 11.33,
+        "ground_truth_tmb_h": true,
+        "estimated_tmb_h": true,
+        "correct": true
+      },
+      {
+        "patient_id": "TCGA-A5-A0GJ",
+        "sample_id": "TCGA-A5-A0GJ-01",
+        "cancer_type": "endometrial",
+        "mutation_count": 61,
+        "ground_truth_tmb": 2.033333333,
+        "estimated_tmb": 2.03,
+        "ground_truth_tmb_h": false,
+        "estimated_tmb_h": false,
+        "correct": true
+      },
+      {
+        "patient_id": "TCGA-A5-A0GM",
+        "sample_id": "TCGA-A5-A0GM-01",
+        "cancer_type": "endometrial",
+        "mutation_count": 42,
+        "ground_truth_tmb": 1.4,
+        "estimated_tmb": 1.4,
+        "ground_truth_tmb_h": false,
+        "estimated_tmb_h": false,
+        "correct": true
+      },
+      {
+        "patient_id": "TCGA-A5-A0GN",
+        "sample_id": "TCGA-A5-A0GN-01",
+        "cancer_type": "endometrial",
+        "mutation_count": 56,
+        "ground_truth_tmb": 1.866666667,
+        "estimated_tmb": 1.87,
+        "ground_truth_tmb_h": false,
+        "estimated_tmb_h": false,
+        "correct": true
+      },
+      {
+        "patient_id": "TCGA-A5-A0GP",
+        "sample_id": "TCGA-A5-A0GP-01",
+        "cancer_type": "endometrial",
+        "mutation_count": 1453,
+        "ground_truth_tmb": 48.86666667,
+        "estimated_tmb": 48.43,
+        "ground_truth_tmb_h": true,
+        "estimated_tmb_h": true,
+        "correct": true
+      },
+      {
+        "patient_id": "TCGA-A5-A0GQ",
+        "sample_id": "TCGA-A5-A0GQ-01",
+        "cancer_type": "endometrial",
+        "mutation_count": 57,
+        "ground_truth_tmb": 1.9,
+        "estimated_tmb": 1.9,
+        "ground_truth_tmb_h": false,
+        "estimated_tmb_h": false,
+        "correct": true
+      },
+      {
+        "patient_id": "TCGA-A5-A0GU",
+        "sample_id": "TCGA-A5-A0GU-01",
+        "cancer_type": "endometrial",
+        "mutation_count": 42,
+        "ground_truth_tmb": 1.4,
+        "estimated_tmb": 1.4,
+        "ground_truth_tmb_h": false,
+        "estimated_tmb_h": false,
+        "correct": true
+      }
+    ]
+  }
+}

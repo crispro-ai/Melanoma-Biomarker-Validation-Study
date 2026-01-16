@@ -1,0 +1,410 @@
+{
+  "run": {
+    "date": "2026-01-11T04:22:22.405361",
+    "method": "MMR gene mutation detection",
+    "mmr_genes": [
+      "EPCAM",
+      "MSH2",
+      "MSH6",
+      "MLH1",
+      "PMS2"
+    ],
+    "passed": false
+  },
+  "targets": {
+    "sensitivity": 0.75,
+    "specificity": 0.9
+  },
+  "results": {
+    "overall_metrics": {
+      "n_patients": 2011,
+      "n_msi_h_true": 350,
+      "n_msi_h_predicted": 255,
+      "confusion_matrix": {
+        "tp": 127,
+        "tn": 1533,
+        "fp": 128,
+        "fn": 223
+      },
+      "accuracy": 0.8255,
+      "sensitivity": 0.3629,
+      "specificity": 0.9229,
+      "precision_ppv": 0.498,
+      "npv": 0.873,
+      "f1_score": 0.4198
+    },
+    "by_cancer_type": {
+      "endometrial": {
+        "n": 529,
+        "n_msi_h": 169,
+        "sensitivity": 0.3609,
+        "specificity": 0.8861
+      },
+      "colorectal": {
+        "n": 594,
+        "n_msi_h": 98,
+        "sensitivity": 0.3673,
+        "specificity": 0.9597
+      },
+      "stomach": {
+        "n": 440,
+        "n_msi_h": 83,
+        "sensitivity": 0.3614,
+        "specificity": 0.9748
+      },
+      "melanoma": {
+        "n": 448,
+        "n_msi_h": 0,
+        "sensitivity": 0,
+        "specificity": 0.8705
+      }
+    },
+    "false_negatives_count": 223,
+    "sample_false_negatives": [
+      {
+        "patient_id": "TCGA-A5-A0G9",
+        "sample_id": "TCGA-A5-A0G9-01",
+        "cancer_type": "endometrial",
+        "ground_truth_msi": "MSI-H",
+        "ground_truth_msi_h": true,
+        "mmr_genes_mutated": [],
+        "n_total_genes": 426,
+        "predicted_msi_h": false,
+        "correct": false
+      },
+      {
+        "patient_id": "TCGA-A5-A0GB",
+        "sample_id": "TCGA-A5-A0GB-01",
+        "cancer_type": "endometrial",
+        "ground_truth_msi": "MSI-H",
+        "ground_truth_msi_h": true,
+        "mmr_genes_mutated": [],
+        "n_total_genes": 647,
+        "predicted_msi_h": false,
+        "correct": false
+      },
+      {
+        "patient_id": "TCGA-A5-A0GG",
+        "sample_id": "TCGA-A5-A0GG-01",
+        "cancer_type": "endometrial",
+        "ground_truth_msi": "MSI-H",
+        "ground_truth_msi_h": true,
+        "mmr_genes_mutated": [],
+        "n_total_genes": 0,
+        "predicted_msi_h": false,
+        "correct": false
+      },
+      {
+        "patient_id": "TCGA-A5-A0GH",
+        "sample_id": "TCGA-A5-A0GH-01",
+        "cancer_type": "endometrial",
+        "ground_truth_msi": "MSI-H",
+        "ground_truth_msi_h": true,
+        "mmr_genes_mutated": [],
+        "n_total_genes": 419,
+        "predicted_msi_h": false,
+        "correct": false
+      },
+      {
+        "patient_id": "TCGA-A5-A0GI",
+        "sample_id": "TCGA-A5-A0GI-01",
+        "cancer_type": "endometrial",
+        "ground_truth_msi": "MSI-H",
+        "ground_truth_msi_h": true,
+        "mmr_genes_mutated": [],
+        "n_total_genes": 332,
+        "predicted_msi_h": false,
+        "correct": false
+      },
+      {
+        "patient_id": "TCGA-A5-A0GW",
+        "sample_id": "TCGA-A5-A0GW-01",
+        "cancer_type": "endometrial",
+        "ground_truth_msi": "MSI-H",
+        "ground_truth_msi_h": true,
+        "mmr_genes_mutated": [],
+        "n_total_genes": 294,
+        "predicted_msi_h": false,
+        "correct": false
+      },
+      {
+        "patient_id": "TCGA-A5-A0VQ",
+        "sample_id": "TCGA-A5-A0VQ-01",
+        "cancer_type": "endometrial",
+        "ground_truth_msi": "MSI-H",
+        "ground_truth_msi_h": true,
+        "mmr_genes_mutated": [],
+        "n_total_genes": 359,
+        "predicted_msi_h": false,
+        "correct": false
+      },
+      {
+        "patient_id": "TCGA-A5-A2K7",
+        "sample_id": "TCGA-A5-A2K7-01",
+        "cancer_type": "endometrial",
+        "ground_truth_msi": "MSI-H",
+        "ground_truth_msi_h": true,
+        "mmr_genes_mutated": [],
+        "n_total_genes": 585,
+        "predicted_msi_h": false,
+        "correct": false
+      },
+      {
+        "patient_id": "TCGA-A5-A7WJ",
+        "sample_id": "TCGA-A5-A7WJ-01",
+        "cancer_type": "endometrial",
+        "ground_truth_msi": "MSI-H",
+        "ground_truth_msi_h": true,
+        "mmr_genes_mutated": [],
+        "n_total_genes": 0,
+        "predicted_msi_h": false,
+        "correct": false
+      },
+      {
+        "patient_id": "TCGA-AJ-A2QO",
+        "sample_id": "TCGA-AJ-A2QO-01",
+        "cancer_type": "endometrial",
+        "ground_truth_msi": "MSI-H",
+        "ground_truth_msi_h": true,
+        "mmr_genes_mutated": [],
+        "n_total_genes": 1066,
+        "predicted_msi_h": false,
+        "correct": false
+      }
+    ],
+    "sample_results": [
+      {
+        "patient_id": "TCGA-2E-A9G8",
+        "sample_id": "TCGA-2E-A9G8-01",
+        "cancer_type": "endometrial",
+        "ground_truth_msi": "MSS",
+        "ground_truth_msi_h": false,
+        "mmr_genes_mutated": [],
+        "n_total_genes": 65,
+        "predicted_msi_h": false,
+        "correct": true
+      },
+      {
+        "patient_id": "TCGA-4E-A92E",
+        "sample_id": "TCGA-4E-A92E-01",
+        "cancer_type": "endometrial",
+        "ground_truth_msi": "MSS",
+        "ground_truth_msi_h": false,
+        "mmr_genes_mutated": [],
+        "n_total_genes": 144,
+        "predicted_msi_h": false,
+        "correct": true
+      },
+      {
+        "patient_id": "TCGA-5B-A90C",
+        "sample_id": "TCGA-5B-A90C-01",
+        "cancer_type": "endometrial",
+        "ground_truth_msi": "MSS",
+        "ground_truth_msi_h": false,
+        "mmr_genes_mutated": [],
+        "n_total_genes": 44,
+        "predicted_msi_h": false,
+        "correct": true
+      },
+      {
+        "patient_id": "TCGA-5S-A9Q8",
+        "sample_id": "TCGA-5S-A9Q8-01",
+        "cancer_type": "endometrial",
+        "ground_truth_msi": "MSS",
+        "ground_truth_msi_h": false,
+        "mmr_genes_mutated": [],
+        "n_total_genes": 48,
+        "predicted_msi_h": false,
+        "correct": true
+      },
+      {
+        "patient_id": "TCGA-A5-A0G1",
+        "sample_id": "TCGA-A5-A0G1-01",
+        "cancer_type": "endometrial",
+        "ground_truth_msi": "MSS",
+        "ground_truth_msi_h": false,
+        "mmr_genes_mutated": [
+          "MSH6",
+          "MLH1",
+          "PMS2"
+        ],
+        "n_total_genes": 6466,
+        "predicted_msi_h": true,
+        "correct": false
+      },
+      {
+        "patient_id": "TCGA-A5-A0G2",
+        "sample_id": "TCGA-A5-A0G2-01",
+        "cancer_type": "endometrial",
+        "ground_truth_msi": "MSI-H",
+        "ground_truth_msi_h": true,
+        "mmr_genes_mutated": [
+          "MSH6",
+          "PMS2",
+          "EPCAM",
+          "MSH2",
+          "MLH1"
+        ],
+        "n_total_genes": 11216,
+        "predicted_msi_h": true,
+        "correct": true
+      },
+      {
+        "patient_id": "TCGA-A5-A0G3",
+        "sample_id": "TCGA-A5-A0G3-01",
+        "cancer_type": "endometrial",
+        "ground_truth_msi": "MSS",
+        "ground_truth_msi_h": false,
+        "mmr_genes_mutated": [],
+        "n_total_genes": 38,
+        "predicted_msi_h": false,
+        "correct": true
+      },
+      {
+        "patient_id": "TCGA-A5-A0G5",
+        "sample_id": "TCGA-A5-A0G5-01",
+        "cancer_type": "endometrial",
+        "ground_truth_msi": "MSS",
+        "ground_truth_msi_h": false,
+        "mmr_genes_mutated": [],
+        "n_total_genes": 123,
+        "predicted_msi_h": false,
+        "correct": true
+      },
+      {
+        "patient_id": "TCGA-A5-A0G9",
+        "sample_id": "TCGA-A5-A0G9-01",
+        "cancer_type": "endometrial",
+        "ground_truth_msi": "MSI-H",
+        "ground_truth_msi_h": true,
+        "mmr_genes_mutated": [],
+        "n_total_genes": 426,
+        "predicted_msi_h": false,
+        "correct": false
+      },
+      {
+        "patient_id": "TCGA-A5-A0GA",
+        "sample_id": "TCGA-A5-A0GA-01",
+        "cancer_type": "endometrial",
+        "ground_truth_msi": "MSI-H",
+        "ground_truth_msi_h": true,
+        "mmr_genes_mutated": [
+          "PMS2"
+        ],
+        "n_total_genes": 296,
+        "predicted_msi_h": true,
+        "correct": true
+      },
+      {
+        "patient_id": "TCGA-A5-A0GB",
+        "sample_id": "TCGA-A5-A0GB-01",
+        "cancer_type": "endometrial",
+        "ground_truth_msi": "MSI-H",
+        "ground_truth_msi_h": true,
+        "mmr_genes_mutated": [],
+        "n_total_genes": 647,
+        "predicted_msi_h": false,
+        "correct": false
+      },
+      {
+        "patient_id": "TCGA-A5-A0GD",
+        "sample_id": "TCGA-A5-A0GD-01",
+        "cancer_type": "endometrial",
+        "ground_truth_msi": "MSS",
+        "ground_truth_msi_h": false,
+        "mmr_genes_mutated": [],
+        "n_total_genes": 0,
+        "predicted_msi_h": false,
+        "correct": true
+      },
+      {
+        "patient_id": "TCGA-A5-A0GE",
+        "sample_id": "TCGA-A5-A0GE-01",
+        "cancer_type": "endometrial",
+        "ground_truth_msi": "MSS",
+        "ground_truth_msi_h": false,
+        "mmr_genes_mutated": [],
+        "n_total_genes": 29,
+        "predicted_msi_h": false,
+        "correct": true
+      },
+      {
+        "patient_id": "TCGA-A5-A0GG",
+        "sample_id": "TCGA-A5-A0GG-01",
+        "cancer_type": "endometrial",
+        "ground_truth_msi": "MSI-H",
+        "ground_truth_msi_h": true,
+        "mmr_genes_mutated": [],
+        "n_total_genes": 0,
+        "predicted_msi_h": false,
+        "correct": false
+      },
+      {
+        "patient_id": "TCGA-A5-A0GH",
+        "sample_id": "TCGA-A5-A0GH-01",
+        "cancer_type": "endometrial",
+        "ground_truth_msi": "MSI-H",
+        "ground_truth_msi_h": true,
+        "mmr_genes_mutated": [],
+        "n_total_genes": 419,
+        "predicted_msi_h": false,
+        "correct": false
+      },
+      {
+        "patient_id": "TCGA-A5-A0GI",
+        "sample_id": "TCGA-A5-A0GI-01",
+        "cancer_type": "endometrial",
+        "ground_truth_msi": "MSI-H",
+        "ground_truth_msi_h": true,
+        "mmr_genes_mutated": [],
+        "n_total_genes": 332,
+        "predicted_msi_h": false,
+        "correct": false
+      },
+      {
+        "patient_id": "TCGA-A5-A0GJ",
+        "sample_id": "TCGA-A5-A0GJ-01",
+        "cancer_type": "endometrial",
+        "ground_truth_msi": "MSS",
+        "ground_truth_msi_h": false,
+        "mmr_genes_mutated": [],
+        "n_total_genes": 58,
+        "predicted_msi_h": false,
+        "correct": true
+      },
+      {
+        "patient_id": "TCGA-A5-A0GM",
+        "sample_id": "TCGA-A5-A0GM-01",
+        "cancer_type": "endometrial",
+        "ground_truth_msi": "MSS",
+        "ground_truth_msi_h": false,
+        "mmr_genes_mutated": [],
+        "n_total_genes": 39,
+        "predicted_msi_h": false,
+        "correct": true
+      },
+      {
+        "patient_id": "TCGA-A5-A0GN",
+        "sample_id": "TCGA-A5-A0GN-01",
+        "cancer_type": "endometrial",
+        "ground_truth_msi": "MSS",
+        "ground_truth_msi_h": false,
+        "mmr_genes_mutated": [],
+        "n_total_genes": 56,
+        "predicted_msi_h": false,
+        "correct": true
+      },
+      {
+        "patient_id": "TCGA-A5-A0GP",
+        "sample_id": "TCGA-A5-A0GP-01",
+        "cancer_type": "endometrial",
+        "ground_truth_msi": "MSS",
+        "ground_truth_msi_h": false,
+        "mmr_genes_mutated": [],
+        "n_total_genes": 1300,
+        "predicted_msi_h": false,
+        "correct": true
+      }
+    ]
+  }
+}

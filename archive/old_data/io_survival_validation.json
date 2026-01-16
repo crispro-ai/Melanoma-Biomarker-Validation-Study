@@ -1,0 +1,102 @@
+{
+  "run": {
+    "date": "2026-01-11T04:40:12.488435",
+    "cohort": "Samstein 2019 (PMID: 30643254)",
+    "n_patients": 1661,
+    "question": "Does TMB-H predict better survival on IO?",
+    "passed": true
+  },
+  "overall_results": {
+    "n_tmb_h": 460,
+    "n_tmb_l": 1201,
+    "crude_median_os": {
+      "tmb_h": 80.0,
+      "tmb_l": 7.0,
+      "tmb_h_events": 169,
+      "tmb_l_events": 663
+    },
+    "km_median_os": {
+      "tmb_h": 42.0,
+      "tmb_l": 15.0
+    },
+    "logrank_test": {
+      "test_statistic": 45.79,
+      "p_value": 1.3168001287591659e-11,
+      "significant": true
+    },
+    "cox_regression": {
+      "hazard_ratio": 0.563,
+      "hr_ci_95_lower": 0.475,
+      "hr_ci_95_upper": 0.666,
+      "p_value": 2.7717283050558214e-11,
+      "significant": true,
+      "interpretation": "TMB-H patients have 43.7% lower hazard (better survival)"
+    }
+  },
+  "by_cancer_type": {
+    "Non-Small Cell Lung Cancer": {
+      "n_total": 350,
+      "n_tmb_h": 112,
+      "n_tmb_l": 238,
+      "median_os_tmb_h": 13.0,
+      "median_os_tmb_l": 8.5,
+      "relative_benefit_pct": 52.9
+    },
+    "Melanoma": {
+      "n_total": 320,
+      "n_tmb_h": 142,
+      "n_tmb_l": 178,
+      "median_os_tmb_h": 21.0,
+      "median_os_tmb_l": 17.0,
+      "relative_benefit_pct": 23.5
+    },
+    "Bladder Cancer": {
+      "n_total": 215,
+      "n_tmb_h": 81,
+      "n_tmb_l": 134,
+      "median_os_tmb_h": 10.0,
+      "median_os_tmb_l": 7.0,
+      "relative_benefit_pct": 42.9
+    },
+    "Head and Neck Cancer": {
+      "n_total": 139,
+      "n_tmb_h": 25,
+      "n_tmb_l": 114,
+      "median_os_tmb_h": 8.0,
+      "median_os_tmb_l": 7.0,
+      "relative_benefit_pct": 14.3
+    },
+    "Esophagogastric Cancer": {
+      "n_total": 126,
+      "n_tmb_h": 18,
+      "n_tmb_l": 108,
+      "median_os_tmb_h": 6.0,
+      "median_os_tmb_l": 5.0,
+      "relative_benefit_pct": 20.0
+    },
+    "Glioma": {
+      "n_total": 117,
+      "n_tmb_h": 9,
+      "n_tmb_l": 108,
+      "median_os_tmb_h": 8.0,
+      "median_os_tmb_l": 12.0,
+      "relative_benefit_pct": -33.3
+    },
+    "Colorectal Cancer": {
+      "n_total": 110,
+      "n_tmb_h": 44,
+      "n_tmb_l": 66,
+      "median_os_tmb_h": 9.0,
+      "median_os_tmb_l": 7.0,
+      "relative_benefit_pct": 28.6
+    },
+    "Cancer of Unknown Primary": {
+      "n_total": 88,
+      "n_tmb_h": 24,
+      "n_tmb_l": 64,
+      "median_os_tmb_h": 6.0,
+      "median_os_tmb_l": 4.0,
+      "relative_benefit_pct": 50.0
+    }
+  }
+}

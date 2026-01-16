@@ -1,0 +1,5 @@
+Biomarker,AUC,Source,Advantage
+PD-L1 Expression (CD274),0.572,This study (GSE91061),Baseline comparator
+TMB (≥10 mut/Mb),0.60-0.65*,Samstein 2019 (literature),Requires WES/WGS
+MSI-H Status,0.70-0.80*,Le et al. 2015 (literature),Limited to MMR-deficient tumors
+Our Pathway Composite (8 pathways),0.779,This study (GSE91061),"RNA-seq only, multi-pathway, validated"
